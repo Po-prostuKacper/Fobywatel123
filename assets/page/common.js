@@ -21,5 +21,5 @@ function validate(){
 
 function sendToError(){
     localStorage.removeItem('token');
-    location.href="./login";
+    location.href = '/login';
 }

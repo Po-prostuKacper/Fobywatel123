@@ -84,7 +84,7 @@ if (create){
         if (limit){
             notify('Osiągnięto limit dowodów.', 'error')
         }else{
-            location.href="./generator"
+            location.href = '/generator'
         }
     })
 }
@@ -120,7 +120,7 @@ function load(type){
                 var admin =  document.querySelector(".admin");
                 admin.style.display = "block"
                 admin.addEventListener('click', () => {
-                    location.href="./admin"
+                    location.href = '/admin'
                 })
             }
         }
@@ -166,9 +166,9 @@ function deleteId(id){
 }
 
 function editId(id){
-    location.href="./generator?id=" + id;
+    location.href = '/generator?id=' + id;
 }
 
 function enterId(token){
-    location.href="./id?card_token=" + token;
+    location.href = '/id?card_token=' + token;
 }

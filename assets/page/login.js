@@ -28,7 +28,7 @@ if (access.has('access_token')){
             openErrorBox(requestError)
         }else{
             localStorage.setItem('token', result.token);
-            location.href="./dashboard"
+            location.href = '/dashboard'
         }
     })
 }
@@ -55,7 +55,7 @@ document.querySelector('.login_button').addEventListener('click', () => {
                 openErrorBox(requestError)
             }else{
                 localStorage.setItem('token', value)
-                location.href="./dashboard"
+                location.href = '/dashboard'
             }
         });
 
@@ -63,7 +63,7 @@ document.querySelector('.login_button').addEventListener('click', () => {
 })
 
 if (localStorage.getItem('token')){
-    location.href="./dashboard"
+    location.href = '/dashboard'
 }
 
 input.addEventListener('click', () => {

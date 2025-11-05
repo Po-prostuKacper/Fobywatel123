@@ -180,7 +180,7 @@ save.addEventListener('click', () => {
                 if (response.status != 200){
                     notify('Wystąpił nieznany błąd.', 'error');
                 }else{
-                    location.href="./dashboard"
+                    location.href = '/dashboard'
                 }
             })
         }

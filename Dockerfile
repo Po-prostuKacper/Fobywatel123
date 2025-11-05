@@ -1,10 +1,6 @@
-# syntax=docker/dockerfile:1
-FROM eclipse-temurin:22-jdk
-
+FROM node:18-alpine
 WORKDIR /app
 COPY . .
-
-ENV PORT=8080
+ENV NODE_ENV=production
 EXPOSE 8080
-
-CMD ["java", "-jar", "server.jar"]
+CMD ["node", "server.js"]
