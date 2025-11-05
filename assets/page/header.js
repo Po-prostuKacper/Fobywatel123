@@ -7,12 +7,6 @@ var logged = false;
 var loginActive = "login_active"
 var loginOpened = "login_open"
 
-if (localStorage.getItem('token')){
-    logged = true;
-    login.classList.add(loginActive);
-    login.querySelector(".login_text").innerHTML = "Konto";
-}
-
 login.addEventListener('click', () => {
     if (logged){
         var classes = login.classList;

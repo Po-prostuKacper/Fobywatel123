@@ -15,9 +15,6 @@ var boxOpened = 'box_open'
 
 var yourCards = document.querySelector('.ids');
 
-var token = localStorage.getItem('token');
-var limit = false;
-
 guideOpen.addEventListener('click', () => {
     guide.classList.add(boxOpened)
 })
