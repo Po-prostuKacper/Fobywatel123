@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0; url=./index.html">
+  <title>Przekierowanie...</title>
+  <script>
+    // Jeśli GitHub Pages wejdzie np. na /pesel, przekieruj na index.html z zachowaniem ścieżki
+    const redirect = () => {
+      const path = window.location.pathname.replace(/^\//, '');
+      if (path && !path.endsWith('.html')) {
+        window.location.replace(`./index.html#/${path}`);
+      } else {
+        window.location.replace('./index.html');
+      }
+    };
+    redirect();
+  </script>
+</head>
+<body>
+  <p>Przekierowuję do strony głównej...</p>
+</body>
+</html>
