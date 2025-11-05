@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="0">
+        <link rel="stylesheet" href="assets/page/login.css">
+        <link rel="stylesheet" href="assets/page/header.css">
+        <link rel="stylesheet" href="assets/page/common.css">
+        <link rel="stylesheet" href="assets/page/footer.css">
+        <link rel="icon" type="image/x-icon" class="icon">
+        <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no">
+        <title>Logowanie</title>
+    </head>
+    <body>
+
+        <div class="background_container">
+            <div class="background_gradient"></div>
+            <canvas class="background"></canvas>
+        </div>
+
+        <div class="header">
+            <div class="header_opacity"></div>
+            <img class="header_logo logo">
+            <img class="hamburger" src="assets/page/images/hamburger.png">
+            <div class="header_holder">
+                <img class="x" src="assets/page/images/close.png">
+                <div class="buttons header_buttons">
+                    <div class="button" onclick="location.href = '/'">
+                        <p class="button_text">Strona główna</p>
+                        <div class="button_underline"></div>
+                    </div>
+                    <div class="button" onclick="window.open('/discord')">
+                        <p class="button_text">Discord</p>
+                        <div class="button_underline"></div>
+                    </div>
+                    <div class="login">
+                        <div class="login_grid">
+                            <p class="login_text">Zaloguj się</p>
+                            <img class="login_arrow" src="assets/page/images/arrow.png">
+                        </div>
+                        <p class="login_action" onclick="location.href = '/dashboard'">Panel</p>
+                        <p class="login_action" onclick="localStorage.removeItem('token'); location.href = '/'">Wyloguj się</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <p class="login_title" id="login">LOGOWANIE DO <span class="highlight">PANELU</span></p>
+            <div class="error_box">
+                
+            </div>
+            <div class="input_holder">
+                <input class="input" placeholder=" " type="password">
+                <p class="input_placeholder">Wprowadź token</p>
+                <p class="input_error">To pole nie może być puste</p>
+            </div>
+            <p class="login_button">Zaloguj się</p>
+            <div class="discord_button" onclick="location.href = '/auth/discord'">
+                <div class="discord_grid">
+                    <img class="discord_image" src="assets/page/images/discord.png">
+                    <p class="discord_text">Zaloguj się przez discord</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p class="footer_title name_caps"></p>
+            <div class="buttons">
+                <div class="button" onclick="location.href = '/'">
+                    <p class="button_text">Strona główna</p>
+                    <div class="button_underline"></div>
+                </div>
+                <div class="button" onclick="window.open('/discord')">
+                    <p class="button_text">Discord</p>
+                    <div class="button_underline"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/page/branding.js"></script>
+        <script src="assets/page/header.js"></script>
+        <script src="assets/page/login.js"></script>
+    </body>
+</html>

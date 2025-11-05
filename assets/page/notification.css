@@ -1,0 +1,127 @@
+
+
+:root{
+    --success-color: #063608;
+    --success-border: #338636;
+    --error-color: rgb(54, 7, 7);
+    --error-border: rgb(190, 34, 34);
+    --progress-height: 10px;
+    --notification-width: 360px;
+}
+
+.inotify_success{
+    background-color: var(--success-color);
+    border: 1px solid var(--success-border);
+}
+
+.inotification_collector{
+    display: grid;
+    position: fixed;
+    right: 0px;
+    height: 100%;
+    bottom: 0px;
+    width: max-content;
+    height: max-content;
+    pointer-events: fill;
+    grid-auto-flow: dense;
+    grid-auto-rows: max-content;
+    z-index: 2000;
+}
+
+.inotify_error{
+    background-color: var(--error-color);
+    border: 1px solid var(--error-border);
+}
+
+.inotification_box{
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: var(--notification-width);
+    height: 55px;
+    display: grid;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    grid-template-rows: calc(var(--notification-height) - var(--progress-height)) var(--progress-height);
+    grid-template-columns: 100%;
+    margin-right: 10px;
+    margin-left: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.inotification_grid{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 80% 20%;
+}
+
+.inotification_hide{
+    width: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.inotification_hide:hover{
+    opacity: 0.5;
+}
+
+.inotification_text{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 90%;
+    height: max-content;
+    text-align: left;
+    margin-left: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+}
+
+/**Animations**/
+
+.ditch{
+    animation-fill-mode: forwards;
+    animation-duration: 500ms;
+    animation-name: ditch;
+}
+
+.fade{
+    animation-fill-mode: forwards;
+    animation-duration: 500ms;
+    animation-name: fade;
+}
+
+@keyframes ditch {
+    0% {
+        margin-right: 10px;
+    }
+    50%{
+        margin-right: 50px;
+    }
+    100%{
+        margin-right: -400px;
+        display: none;
+    }
+}
+
+@keyframes fade {
+    0% {
+        margin-top: 0;
+        height: 65px;
+        opacity: 0;
+        margin-bottom: 0;
+    }
+    100%{
+        margin-top: 0;
+        height: 0px;
+        opacity: 0;
+        margin-bottom: 0;
+    }
+}

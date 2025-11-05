@@ -1,0 +1,136 @@
+
+body{
+    background-color: var(--primary);
+    margin: 0;
+}
+
+.footer{
+    position: absolute !important;
+}
+
+.container{
+    border-radius: 10px;
+    padding: 40px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    height: max-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.error_box{
+    border: 1px solid var(--error);
+    background-color: var(--error-dark);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    display: none;
+}
+
+.error_box_shown{
+    display: block;
+}
+
+.login_title{
+    text-align: center;
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-top: -50px;
+    color: white;
+}
+
+.login_button{
+    width: calc(100% - 4px);
+    height: 45px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    border: 2px solid white;
+    border-radius: 20px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.login_button:hover{
+    background-color: white;
+    color: black;
+}
+
+.discord_button{
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    border-radius: 20px;
+    width: 100%;
+    height: 45px;
+    background-color: white;
+    margin-top: -10px;
+}
+
+.discord_grid{
+    position: absolute;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    height: max-content;
+    width: max-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.discord_image{
+    width: 32px;
+    margin-right: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.discord_text{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: max-content;
+    height: max-content;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.discord_button:hover{
+    opacity: 0.5;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container{
+        width: 90%;
+        padding: 0;
+    }
+
+    .login_title{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .discord_button{
+        height: 45px;
+    }
+
+    .login_button{
+        line-height: 45px;
+        height: 45px;
+    }
+}

@@ -1,0 +1,72 @@
+<head>
+    <title>mObywatel</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="stylesheet" href="assets/app/main.css">
+    <link rel="stylesheet" href="assets/app/confirmation.css">
+    <link rel="icon" type="image/x-icon" href="assets/app/images/logo.png">
+    <link rel="apple-touch-icon" href="assets/app/images/logo.png">
+    <link rel="shortcut icon" href="assets/app/images/logo.png">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+</head>
+<body>
+    <div class="top_grid_fixed">
+        <img src="assets/app/images/close_white.png" class="help_img_fixed close">
+    </div>
+    <div class="bottom_bar">
+        <div class="bottom_bar_grid">
+            <div class="bottom_element_grid" send="documents">
+                <div class="bottom_element_image documents"></div>
+                <p class="bottom_element_text">Dokumenty</p>
+            </div>
+            <div class="bottom_element_grid" send="services">
+                <div class="bottom_element_image services"></div>
+                <p class="bottom_element_text">Usługi</p>
+            </div>
+            <div class="bottom_element_grid" send="qr">
+                <div class="bottom_element_image qr_open"></div>
+                <p class="bottom_element_text open">Kod QR</p>
+            </div>
+            <div class="bottom_element_grid" send="more">
+                <div class="bottom_element_image more"></div>
+                <p class="bottom_element_text">Więcej</p>
+            </div>
+        </div>
+    </div>
+    <div class="share">
+        <p class="share_button close">Zamknij</p>
+    </div>
+    <div class="container">
+        <img class="valid" src="assets/app/images/valid.png">
+        <p class="confirmed">Twoje dane zostały potwierdzone</p>
+        <div class="frame_qr frame_double">
+            <p class="top">Podmiot, któremu przekazano dane</p>
+            <p class="bottom_qr">Użytkownik internetowej usługi weryfikacji mDowodu</p>
+        </div>
+        <div class="frame_qr frame_double last">
+            <p class="top">Udostępnione dane</p>
+            <ul class="list">
+                <li>Zdjęcie</li>
+                <li>Nazwisko</li>
+                <li>Imię (Imiona)</li>
+                <li>Numer PESEL</li>
+                <li>Data urodzenia</li>
+                <li>Obywatelstwo</li>
+                <li>Imię ojca</li>
+                <li>Imię matki</li>
+                <li>Seria i nr dokumentu mDowód</li>
+                <li>Termin ważności dokumentu mDowód</li>
+                <li>Data wydania dokumentu mDowód</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="assets/app/bar.js"></script>
+    <script src="assets/app/confirmation.js"></script>
+    <script src="assets/app/manifest.js"></script>
+    <script src="assets/cache.js"></script>
+</body>

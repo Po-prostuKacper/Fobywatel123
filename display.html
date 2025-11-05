@@ -1,0 +1,108 @@
+<head>
+    <title>mObywatel</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="stylesheet" href="assets/app/main.css">
+    <link rel="stylesheet" href="assets/app/display.css">
+    <link rel="icon" type="image/x-icon" href="assets/app/images/logo.png">
+    <link rel="apple-touch-icon" href="assets/app/images/logo.png">
+    <link rel="shortcut icon" href="assets/app/images/logo.png">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+</head>
+<body>
+    <div class="top_grid_fixed">
+        <div></div>
+        <p class="title_text_fixed" style="width: max-content;">Sprawdzanie dokumentu</p>
+        <img src="assets/app/images/close_white.png" class="help_img_fixed close">
+    </div>
+    <div class="bottom_bar">
+        <div class="bottom_bar_grid">
+            <div class="bottom_element_grid" send="documents">
+                <div class="bottom_element_image documents_open"></div>
+                <p class="bottom_element_text open">Dokumenty</p>
+            </div>
+            <div class="bottom_element_grid" send="services">
+                <div class="bottom_element_image services"></div>
+                <p class="bottom_element_text">Usługi</p>
+            </div>
+            <div class="bottom_element_grid" send="qr">
+                <div class="bottom_element_image qr"></div>
+                <p class="bottom_element_text">Kod QR</p>
+            </div>
+            <div class="bottom_element_grid" send="more">
+                <div class="bottom_element_image more"></div>
+                <p class="bottom_element_text">Więcej</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="picture_box">
+            <div class="inset"></div>
+            <img class="picture" id="picture">
+        </div>
+        <div class="display_frame">
+            <div class="confirmed">
+                <img class="confirmed_icon" src="assets/app/images/valid_filled.png">
+                <p class="confirmed_text">Potwierdzony</p>
+            </div>
+            <p class="confirmed_title">Dokument mDowód został potwierdzony</p>
+            <p class="confirmed_date">Data i godzina weryfikacji: <span id="verificationDate"></span></p>
+            <p class="valid">Dokument ważny do: <span id="mobileIdCardValidTo"></span></p>
+        </div>
+        <div class="data_holder">
+            <div class="inner_holder">
+                <div class="data_box">
+                    <p class="data_title">Nazwisko</p>
+                    <p class="data_subtitle" id="surname"></p>
+                </div>
+                <div class="data_box">
+                    <p class="data_title">Imię (Imiona)</p>
+                    <p class="data_subtitle" id="names"></p>
+                </div>
+                <div class="data_box">
+                    <p class="data_title">Numer PESEL</p>
+                    <p class="data_subtitle" id="pesel"></p>
+                </div>
+                <div class="data_box">
+                    <p class="data_title">Data urodzenia</p>
+                    <p class="data_subtitle" id="birthDate"></p>
+                </div>
+                <div class="data_box">
+                    <p class="data_title">Obywatelstwo</p>
+                    <p class="data_subtitle" id="citizenship"></p>
+                </div>
+                <div class="data_box">
+                    <p class="data_title">Imię ojca</p>
+                    <p class="data_subtitle" id="fatherName"></p>
+                </div>
+                <div class="data_box">
+                    <p class="data_title">Imię matki</p>
+                    <p class="data_subtitle" id="motherName"></p>
+                </div>
+                <div class="data_box">
+                    <p class="data_title">Seria i nr dokumentu mDowód</p>
+                    <p class="data_subtitle" id="mobileIdCardNumber"></p>
+                </div>
+                <div class="data_box" style="border: none;">
+                    <p class="data_title">Data wydania dokumentu mDowód</p>
+                    <p class="data_subtitle" id="mobileIdCardValidFrom"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="share">
+        <div class="loading">
+            <div class="loading_bar"></div>
+        </div>
+        <p class="timer">Strona wygaśnie za: <span class="timer_highlight"></span></p>
+        <p class="share_button close">Zamknij</p>
+    </div>
+    <script src="assets/app/bar.js"></script>
+    <script src="assets/app/display.js"></script>
+    <script src="assets/app/manifest.js"></script>
+    <script src="assets/cache.js"></script>
+</body>

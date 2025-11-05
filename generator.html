@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="0">
+        <link rel="stylesheet" href="assets/page/common.css">
+        <link rel="stylesheet" href="assets/page/generator.css">
+        <link rel="stylesheet" href="assets/page/footer.css">
+        <link rel="stylesheet" href="assets/page/notification.css">
+        <link rel="stylesheet" href="assets/page/header.css">
+        <link rel="icon" type="image/x-icon" class="icon">
+        <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no">
+        <title>Generator</title>
+    </head>
+    <body>
+
+        <div class="header">
+            <div class="header_opacity"></div>
+            <img class="header_logo logo">
+            <img class="hamburger" src="assets/page/images/hamburger.png">
+            <div class="header_holder">
+                <img class="x" src="assets/page/images/close.png">
+                <div class="buttons header_buttons">
+                    <div class="button" onclick="location.href = '/'">
+                        <p class="button_text">Strona główna</p>
+                        <div class="button_underline"></div>
+                    </div>
+                    <div class="button" onclick="window.open('/discord')">
+                        <p class="button_text">Discord</p>
+                        <div class="button_underline"></div>
+                    </div>
+                    <div class="login">
+                        <div class="login_grid">
+                            <p class="login_text">Zaloguj się</p>
+                            <img class="login_arrow" src="assets/page/images/arrow.png">
+                        </div>
+                        <p class="login_action" onclick="location.href = '/dashboard'">Panel</p>
+                        <p class="login_action" onclick="localStorage.removeItem('token'); location.href = '/'">Wyloguj się</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container">
+
+            <p class="title">GENEROWANIE DOWODU</p>
+            <p class="description">Wprowadź dane, które pokażą się w dowodzie, prosimy o nie wprowadzanie swoich danych osobowych<br>lub danych innych osób fizycznych. Regulamin serwisu dostępny jest na naszym discordzie.</p>
+
+            <div class="action_grid">
+                <div class="image_button" onclick="location.href = '/dashboard'">
+                    <div class="image_button_grid">
+                        <img class="image_button_image" src="assets/page/images/back.png">
+                        <p class="image_button_text">Wróć</p>
+                    </div>
+                </div>
+                <div class="image_button save">
+                    <div class="image_button_grid">
+                        <img class="image_button_image" src="assets/page/images/save.png">
+                        <p class="image_button_text">Zapisz</p>
+                    </div>
+                    <div class="spinner"></div>
+                </div>
+            </div>
+
+            <div class="data_pages">
+                <div class="main data">
+                    <p class="top_info main_info">GŁÓWNE DANE</p>
+
+                    <div class="upload">
+                        <p class="error">To pole jest wymagane</p>
+                        <img class="upload_uploaded">
+                        <div class="upload_uploading"></div>
+                        <div class="upload_grid">
+                            <img class="upload_image" src="assets/page/images/upload.png">
+                            <p class="upload_text">Dodaj zdjęcie</p>
+                        </div>
+                    </div>
+                
+                    <div class="input_holder">
+                        <input type="text" id="name" class="input" placeholder=" ">
+                        <p class="input_placeholder">Imię (imiona)</p>
+                        <p class="input_error">To pole jest wymagane</p>
+                    </div>
+                 
+                    <div class="input_holder">
+                        <input type="text" id="surname" class="input" placeholder=" ">
+                        <span class="input_placeholder">Nazwisko</span>
+                        <p class="input_error">To pole jest wymagane</p>
+                    </div>
+                
+                    <p class="main_info">Płeć</p>
+                    <div class="selector_box">
+                        <div class="selected_grid">
+                            <p class="selector_text selected_text">Mężczyzna</p>
+                            <img class="selected_arrow" src="assets/page/images/arrow_black.png">
+                        </div>
+                        <div class="option_box">
+                            <div class="selector_option" id="m">
+                                Mężczyzna
+                            </div>
+                            <div class="selector_option" id="k">
+                                Kobieta
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="date">
+                        <p class="main_info">Data urodzenia</p>
+                        <div class="date_grid">
+                            <input class="date_input" id="day" placeholder="DD" type="number">
+                    
+                            </input>
+                            <input class="date_input" id="month" placeholder="MM" type="number">
+                    
+                            </input>
+                            <input class="date_input" id="year" placeholder="YYYY" type="number">
+                    
+                            </input>
+                        </div>
+                        <p class="error">Wprowadź prawidłową datę</p>
+                    </div>
+                
+                    <div class="input_holder">
+                        <input type="text" id="nationality" class="input" placeholder=" ">
+                        <span class="input_placeholder">Obywatelstwo</span>
+                        <p class="input_error">To pole jest wymagane</p>
+                    </div>
+
+                    <div class="input_holder">
+                        <input type="text" id="countryOfBirth" class="input" placeholder=" ">
+                        <span class="input_placeholder">Kraj urodzenia</span>
+                        <p class="input_error">To pole jest wymagane</p>
+                    </div>
+
+                </div>
+                <div class="additional data">
+                    <p class="top_info main_info">DODATKOWE DANE</p>
+
+                    <div class="input_holder">
+                        <input type="text" id="mothersName" class="input" placeholder=" ">
+                        <span class="input_placeholder">Imię matki</span>
+                        <p class="input_error">To pole jest wymagane</p>
+                    </div>
+
+                    <div class="input_holder">
+                        <input type="text" id="fathersName" class="input" placeholder=" ">
+                        <span class="input_placeholder">Imię ojca</span>
+                        <p class="input_error">To pole jest wymagane</p>
+                    </div>
+
+                    <div class="input_holder">
+                        <input type="text" id="familyName" class="input" placeholder=" ">
+                        <span class="input_placeholder">Nazwisko rodowe</span>
+                        <p class="input_error">To pole jest wymagane</p>
+                    </div>
+                
+                    <div class="input_holder">
+                        <input type="text" id="fathersFamilyName" class="input" placeholder=" ">
+                        <span class="input_placeholder">Nazwisko rodowe ojca</span>
+                        <p class="input_error">To pole jest wymagane</p>
+                    </div>
+                
+                    <div class="input_holder">
+                        <input type="text" id="mothersFamilyName" class="input" placeholder=" ">
+                        <span class="input_placeholder">Nazwisko rodowe matki</span>
+                        <p class="input_error">To pole jest wymagane</p>
+                    </div>
+                
+                    <p class="main_info">Miejsce zamieszkania</p>
+                
+                    <div class="input_holder">
+                        <input type="text" id="birthPlace" class="input" placeholder=" ">
+                        <span class="input_placeholder">Miejsce urodzenia</span>
+                        <p class="input_error">To pole jest wymagane</p>
+                    </div>
+                
+                    <div class="input_holder">
+                        <input type="text" id="address1" class="input" placeholder=" ">
+                        <span class="input_placeholder">Ulica i numer domu</span>
+                        <p class="input_error">To pole jest wymagane</p>
+                    </div>
+                
+                    <div class="input_holder">
+                        <input type="text" id="address2" class="input" placeholder=" ">
+                        <span class="input_placeholder">Kod pocztowy</span>
+                        <p class="input_error">To pole jest wymagane</p>
+                    </div>
+                
+                    <div class="input_holder">
+                        <input type="text" id="city" class="input" placeholder=" ">
+                        <span class="input_placeholder">Miasto</span>
+                        <p class="input_error">To pole jest wymagane</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/page/branding.js"></script>
+        <script src="assets/page/notification.js"></script>
+        <script src="assets/page/header.js"></script>
+        <script src="assets/page/generator.js"></script>
+        <script src="assets/page/common.js"></script>
+    </body>
+</html>

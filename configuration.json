@@ -1,0 +1,39 @@
+{
+  "backup": 43200000,
+  "hosts": ["Domena lub ip numeryczne, np. domena.pl"],
+  "mysql": {
+    "username": "Nazwa użytkownika mysql",
+    "password": "Hasło mysql",
+    "host": "Adres serwera mysql, np. localhost",
+    "port": null,
+    "database": "Nazwa bazy danych, np. fobywatel (create database fobywatel;)"
+  },
+  "port": 80,
+  "discord": {
+    "verify": "Link do weryfikacji vaultcord/restorecord",
+    "role": "Id rangi klienta",
+    "referer": "Adres logowania przez discord, np. https://domena.pl (wymaga dodania redirect https://domena.pl/login)",
+    "id": "Client ID bota",
+    "token": "Token bota",
+    "guild": "Id serwera discord"
+  },
+  "types": {
+    "default": {
+      "name": "Podstawowy",
+      "limit": 1
+    },
+    "premium": {
+      "name": "Premium",
+      "limit": 20
+    },
+    "admin": {
+      "name": "Admin",
+      "limit": 1000
+    }
+  },
+  "branding": {
+    "name": "Nazwa serwisu",
+    "logo": "assets/page/images/fobywatel.png",
+    "invite": "Link do serwera discord"
+  }
+}
