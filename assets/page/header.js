@@ -23,7 +23,7 @@ login.addEventListener('click', () => {
         }
     }else{
         header.classList.remove(headerOpened);
-        location.href = '/login'
+        location.href="./login"
     }
 })
 
